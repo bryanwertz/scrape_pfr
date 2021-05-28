@@ -30,44 +30,54 @@ tlcs['rai'].append('oak')
 tlcs['sdg'].append('lac')
 tlcs['lac'].append('sdg')
 for tm in tms:
-    for yr in range(2000,2019):
+    for yr in range(2000,2021):
         k = '{}{}'.format(tm,yr)
         three_letter_code[k] = tm
 # Arizona Cardinals
-for yr in range(2000,2019):
+for yr in range(2000,2021):
     k = 'crd{}'.format(yr)
     three_letter_code[k] = 'ari'
 # St Louis Rams
-    # 2016-17 - lar
+    # 2016-21 - lar
     # 2000-15 - stl
-three_letter_code['ram2017'] = 'lar'
-three_letter_code['ram2016'] = 'lar'
+for yr in range(2017,2021):
+    k = 'ram{}'.format(yr)
+    three_letter_code[k] = 'lar'
 for yr in range(2000,2016):
     k = 'ram{}'.format(yr)
     three_letter_code[k] = 'stl'
 # Baltimore Ravens
-for yr in range(2000,2019):
+for yr in range(2000,2021):
     k = 'rav{}'.format(yr)
     three_letter_code[k] = 'bal'
 # Oilers/Titans
-for yr in range(2000,2019):
+for yr in range(2000,2021):
     k = 'oti{}'.format(yr)
     three_letter_code[k] = 'ten'
 # Indianapolis Colts
-for yr in range(2000,2019):
+for yr in range(2000,2021):
     k = 'clt{}'.format(yr)
     three_letter_code[k] = 'ind'
 # Texans
-for yr in range(2000,2019):
+for yr in range(2000,2021):
     k = 'htx{}'.format(yr)
     three_letter_code[k] = 'hou'
 # Raiders
-for yr in range(2000,2019):
+    # 2020-21 - vgs
+    # 2000-19 - oak
+for yr in range(2020,2021):
+    k = 'rai{}'.format(yr)
+    three_letter_code[k] = 'vgs'
+for yr in range(2000-2019):
     k = 'rai{}'.format(yr)
     three_letter_code[k] = 'oak'
 # Chargers
-three_letter_code['sdg2017'] = 'lac'
-for yr in range(2000,2018):
+    # 2017-21 - 'lac'
+    # 2000-16 - 'sdg'
+for yr in range(2017,2021):
+    k = 'sdg{}'.format(yr)
+    three_letter_code[k] = 'lac'
+for yr in range(2000,2016):
     k = 'sdg{}'.format(yr)
     three_letter_code[k] = 'sdg'
 
